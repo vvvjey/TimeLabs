@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing -->
+    <dimen name="spacing_4">4dp</dimen>
+    <dimen name="spacing_8">8dp</dimen>
+    <dimen name="spacing_12">12dp</dimen>
+    <dimen name="spacing_16">16dp</dimen>
+    <dimen name="spacing_20">20dp</dimen>
+    <dimen name="spacing_24">24dp</dimen>
+    <dimen name="spacing_32">32dp</dimen>
+    <dimen name="spacing_48">48dp</dimen>
+    
+    <!-- Corner Radius -->
+    <dimen name="corner_radius_small">4dp</dimen>
+    <dimen name="corner_radius_base">8dp</dimen>
+    <dimen name="corner_radius_medium">12dp</dimen>
+    <dimen name="corner_radius_large">16dp</dimen>
+    
+    <!-- Button Heights -->
+    <dimen name="button_height_small">32dp</dimen>
+    <dimen name="button_height_medium">40dp</dimen>
+    <dimen name="button_height_large">48dp</dimen>
+    <dimen name="button_height_xlarge">56dp</dimen>
+    
+    <!-- Icon Sizes -->
+    <dimen name="icon_size_small">16dp</dimen>
+    <dimen name="icon_size_medium">24dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="timelabs_primary">#1976D2</color>
+    <color name="timelabs_primary_light">#42A5F5</color>
+    <color name="timelabs_primary_dark">#0D47A1</color>
+    
+    <!-- Secondary Colors -->
+    <color name="timelabs_secondary">#388E3C</color>
+    <color name="timelabs_secondary_light">#66BB6A</color>
+    <color name="timelabs_secondary_dark">#1B5E20</color>
+    
+    <!-- Background Colors -->
+    <color name="timelabs_background_primary">#FFFFFF</color>
+    <color name="timelabs_background_secondary">#F5F5F5</color>
+    
+    <!-- Text Colors -->
+    <color name="timelabs_text_primary">#212121</color>
+    <color name="timelabs_text_secondary">#757575</color>
+    
+    <!-- Status Colors -->
+    <color name="timelabs_success">#4CAF50</color>
+    <color name="timelabs_error">#F44336</color>
+    <color name="timelabs_warning">#FF9800</color>
+    <color name="timelabs_info">#2196F3</color>
+</resources>
