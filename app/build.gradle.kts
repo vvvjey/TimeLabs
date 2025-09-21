@@ -51,6 +51,7 @@ dependencies {
 
     implementation(project(":dashboardPresentation"))
     implementation(project(":splashScreenPresentation"))
+    implementation(project(":loginPresentation"))
     implementation(project(":navigation"))
     implementation(project(":designComponent"))
 

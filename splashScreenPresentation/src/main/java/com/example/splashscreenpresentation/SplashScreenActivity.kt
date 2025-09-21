@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import com.example.designcomponent.TimeLabsDesignSystem
 import com.example.designcomponent.components.button.PrimaryButton
 import com.example.designcomponent.theme.TimeLabsTheme
@@ -24,34 +25,38 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             TimeLabsTheme {
-                SplashScreenContent {
-                    // Path-based navigation - no module dependency!
-                    navigateToPath("dashboard")
-                }
+                Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(TimeLabsDesignSystem.Dimens.spacing4),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center
+                ) {
+                    Text(
+                        text = "Welcome to TimeLabs",
+                        style = TimeLabsDesignSystem.Typography.headlineLarge,
+                        color = TimeLabsDesignSystem.Colors.TextPrimary,
+                        modifier = Modifier.padding(bottom = TimeLabsDesignSystem.Dimens.spacing6)
+                    )
+
+                    NavigateFeature (
+                        "Dashboard", { navigateToPath("dashboard") }
+                        )
+                    NavigateFeature (
+                        "Login", { navigateToPath("login") }
+                    )
             }
         }
     }
 }
 
 @Composable
-private fun SplashScreenContent(onNavigateToDashboard: () -> Unit) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(TimeLabsDesignSystem.Dimens.spacing4),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
-    ) {
-        Text(
-            text = "Welcome to TimeLabs",
-            style = TimeLabsDesignSystem.Typography.headlineLarge,
-            color = TimeLabsDesignSystem.Colors.TextPrimary,
-            modifier = Modifier.padding(bottom = TimeLabsDesignSystem.Dimens.spacing6)
-        )
+private fun NavigateFeature( featureName: String, onNavigateToFeature: () -> Unit) {
 
         PrimaryButton(
-            text = "Go to Dashboard",
-            onClick = onNavigateToDashboard
+            modifier = Modifier.padding(vertical = 10.dp),
+            text = "Go to ${featureName}",
+            onClick = onNavigateToFeature
         )
     }
 }
